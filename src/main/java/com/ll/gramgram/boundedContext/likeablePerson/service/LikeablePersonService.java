@@ -59,6 +59,7 @@ public class LikeablePersonService {
         }
     }
 
+    @Transactional // 트랜잭셔널 추가를 함으로 데이터 변경 가능
     public void delete(LikeablePerson likeablePerson) {
         likeablePersonRepository.delete(likeablePerson);
     }
